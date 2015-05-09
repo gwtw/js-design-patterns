@@ -21,12 +21,20 @@ module.exports = function(grunt) {
           consolidate: true
         }
       },
-      src: ['**/*.js']
+      src: ['src/**/*.js']
+    },
+
+    eslint: {
+      options: {
+        configFile: '.eslintrc',
+      },
+      src: ['src/**/*.js']
     }
   });
 
   var tasks = [
-    'grunt-jasmine-node-coverage'
+    'grunt-jasmine-node-coverage',
+    'grunt-eslint'
   ];
 
   for (var i = 0; i < tasks.length; i++) {
@@ -37,6 +45,7 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('default', [
+    'eslint',
     'coverage'
   ]);
 };

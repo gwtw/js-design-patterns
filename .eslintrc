@@ -1,0 +1,7 @@
+{
+  'rules': {
+    'quotes': [1, 'single'],
+    'no-return-assign': false,
+    'no-underscore-dangle': false
+  }
+}

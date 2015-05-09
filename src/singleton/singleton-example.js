@@ -6,6 +6,7 @@
  * Released under the MIT license
  * http://github.com/Tyriar/js-design-patterns/blob/master/LICENSE
  */
+/*global define module*/
 (function (root, factory) {
   'use strict';
   if (typeof define === 'function' && define.amd) {
@@ -29,5 +30,3 @@
 
   return SingletonExample;
 }));
-
-
