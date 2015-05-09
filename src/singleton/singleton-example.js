@@ -10,24 +10,24 @@
   'use strict';
   if (typeof define === 'function' && define.amd) {
     define([], function () {
-      return (root.Singleton = factory());
+      return (root.SingletonExample = factory());
     });
   } else if (typeof exports === 'object') {
     module.exports = factory();
   } else {
-    root.Singleton = factory();
+    root.SingletonExample = factory();
   }
 }(this, function () {
   'use strict';
 
-  var Singleton = function () {
-    if (Singleton.prototype._instance) {
-      return Singleton.prototype._instance;
+  var SingletonExample = function () {
+    if (SingletonExample.prototype._instance) {
+      return SingletonExample.prototype._instance;
     }
-    Singleton.prototype._instance = this;
+    SingletonExample.prototype._instance = this;
   };
 
-  return Singleton;
+  return SingletonExample;
 }));
 
 
