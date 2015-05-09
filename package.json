@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "A collection of design pattern examples written in JavaScript.",
   "scripts": {
-    "test": "grunt"
+    "test": "jasmine-node ."
   },
   "repository": {
     "type": "git",
