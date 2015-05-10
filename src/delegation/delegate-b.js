@@ -6,23 +6,10 @@
  * Released under the MIT license
  * http://github.com/Tyriar/js-design-patterns/blob/master/LICENSE
  */
-(function (root, factory) {
-  'use strict';
-  if (typeof define === 'function' && define.amd) {
-    define([], function () {
-      return (root.DelegateB = factory());
-    });
-  } else if (typeof exports === 'object') {
-    module.exports = factory();
-  } else {
-    root.DelegateB = factory();
-  }
-}(this, function () {
-  'use strict';
+'use strict';
 
-  var DelegateB = function () {
-    return 'b';
-  };
+var DelegateB = function () {
+  return 'b';
+};
 
-  return DelegateB;
-}));
+module.exports = DelegateB;

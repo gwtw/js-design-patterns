@@ -1,12 +1,9 @@
 {
-  'globals': {
-    'define': true,
-    'module': true,
-    'require': true
+  'env': {
+    'node': true
   },
   'rules': {
     'quotes': [1, 'single'],
-    'no-return-assign': false,
-    'no-underscore-dangle': false
+    'no-return-assign': false
   }
 }
