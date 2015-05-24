@@ -8,6 +8,10 @@
  */
 'use strict';
 
-var Product = function () { };
+var ClassA = function () { };
 
-module.exports = Product;
+ClassA.prototype.operation = function () {
+  console.log('ClassA');
+};
+
+module.exports = ClassA;
