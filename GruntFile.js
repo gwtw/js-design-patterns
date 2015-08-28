@@ -32,6 +32,17 @@ module.exports = function(grunt) {
     }
   });
 
+  grunt.loadNpmTasks('grunt-jsdoc');
+  grunt.config('jsdoc', {
+    dist : {
+      src: ['index.js', 'src/**/*.js'],
+      options: {
+        destination: 'doc',
+        readme: 'README.md'
+      }
+    }
+  });
+
   var tasks = [
     'grunt-jasmine-node-coverage',
     'grunt-eslint'
@@ -40,12 +51,10 @@ module.exports = function(grunt) {
   for (var i = 0; i < tasks.length; i++) {
     grunt.loadNpmTasks(tasks[i]);
   }
-  grunt.registerTask('coverage', [
-    'jasmine_node'
-  ]);
 
   grunt.registerTask('default', [
     'eslint',
-    'coverage'
+    'jsdoc',
+    'jasmine_node'
   ]);
 };
