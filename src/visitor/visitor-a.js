@@ -1,10 +1,6 @@
-/*!
- * js-design-patterns
- * http://github.com/Tyriar/js-design-patterns
- *
- * Copyright 2015 Daniel Imms
- * Released under the MIT license
- * http://github.com/Tyriar/js-design-patterns/blob/master/LICENSE
+/**
+ * @module src/visitor/visitor-a
+ * @license MIT Copyright 2015 Daniel Imms (http://www.growingwiththeweb.com)
  */
 'use strict';
 
