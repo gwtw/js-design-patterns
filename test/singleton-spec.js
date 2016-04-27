@@ -2,7 +2,7 @@ var SingletonExample = require('../src/singleton/singleton-example.js');
 
 describe('Singleton', function () {
   'use strict';
-  
+
   describe('multiple new calls to SingletonExample', function () {
     it('should equal each other', function () {
       var a = new SingletonExample();
