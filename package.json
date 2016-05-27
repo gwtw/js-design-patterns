@@ -1,6 +1,6 @@
 {
   "name": "js-design-patterns",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A collection of design pattern examples written in JavaScript.",
   "scripts": {
     "test": "jasmine-node ."
